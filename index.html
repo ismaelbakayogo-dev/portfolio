@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ismaël Bakayogo | Étudiant en Informatique & Développeur Web</title>
+  <meta name="description" content="Portfolio d'Ismaël Bakayogo, étudiant en Licence 3 Informatique à l'Université Nangui Abrogoua, développeur web en apprentissage.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Formes lumineuses décoratives en arrière-plan -->
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="#accueil" class="logo">Ismaël<span>.</span></a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#objectifs">Objectifs</a></li>
+        <li><a href="#contact" class="btn btn-small">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== 1. HERO ===== -->
+    <section id="accueil" class="hero container">
+      <div class="hero-text">
+        <h1>Bonjour, je suis <span class="accent">Ismaël Bakayogo.</span></h1>
+        <p class="hero-sub">Étudiant en Licence 3 Informatique | Développeur Web en apprentissage.</p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn">Découvrir mes projets</a>
+          <a href="#contact" class="btn btn-outline">Me contacter</a>
+        </div>
+        <p class="hero-meta">Université Nangui Abrogoua, Abidjan, Côte d'Ivoire</p>
+      </div>
+      <div class="hero-photo">
+        <!-- Photo de profil : remplacez images/profil.jpg pour la changer -->
+        <img src="images/profil.jpg" alt="Portrait d'Ismaël Bakayogo" width="400" height="400">
+      </div>
+    </section>
+
+    <!-- ===== 2. À PROPOS ===== -->
+    <section id="apropos" class="section container reveal">
+      <h2>À propos</h2>
+      <div class="about">
+        <p>Je suis étudiant en Licence 3 Informatique à l'Université Nangui Abrogoua, à Abidjan. Je me passionne pour le développement web et pour la création de solutions numériques adaptées aux besoins locaux.</p>
+        <p>Mon parcours est celui d'un étudiant qui apprend par la pratique : je construis des projets de démonstration pour progresser, comprendre les bases solides du web et préparer mon entrée dans le monde professionnel.</p>
+      </div>
+    </section>
+
+    <!-- ===== 3. COMPÉTENCES ===== -->
+    <section id="competences" class="section container reveal">
+      <h2>Compétences</h2>
+      <p class="section-intro">Ces compétences continuent d'évoluer : chaque projet me permet d'aller plus loin.</p>
+      <div class="grid grid-3">
+        <!-- data-level = pourcentage affiché dans la barre (modifiable) -->
+        <article class="card skill"><div class="skill-head"><h3>HTML</h3><span>80%</span></div><div class="bar"><div class="bar-fill" data-level="80"></div></div></article>
+        <article class="card skill"><div class="skill-head"><h3>CSS</h3><span>75%</span></div><div class="bar"><div class="bar-fill" data-level="75"></div></div></article>
+        <article class="card skill"><div class="skill-head"><h3>JavaScript</h3><span>60%</span></div><div class="bar"><div class="bar-fill" data-level="60"></div></div></article>
+        <article class="card skill"><div class="skill-head"><h3>Git <small>(en apprentissage)</small></h3><span>35%</span></div><div class="bar"><div class="bar-fill" data-level="35"></div></div></article>
+        <article class="card skill"><div class="skill-head"><h3>Responsive Design</h3><span>70%</span></div><div class="bar"><div class="bar-fill" data-level="70"></div></div></article>
+      </div>
+    </section>
+
+    <!-- ===== BONUS : CE QUE J'APPRENDS ===== -->
+    <section class="section container reveal">
+      <h2>Ce que j'apprends actuellement</h2>
+      <ul class="tags">
+        <li>JavaScript avancé</li>
+        <li>Git et GitHub</li>
+        <li>Réseaux informatiques</li>
+        <li>Bases de données</li>
+        <li>Programmation web</li>
+        <li>Anglais technique</li>
+      </ul>
+    </section>
+
+    <!-- ===== 4. PROJETS ===== -->
+    <section id="projets" class="section container reveal">
+      <h2>Projets</h2>
+      <p class="section-intro">Ce sont des <strong>projets de démonstration</strong> : des idées que je prévois de développer pour m'entraîner. Aucun n'est encore réalisé.</p>
+      <div class="grid grid-2">
+
+        <article class="card project">
+          <img src="images/projet-concours.svg" alt="Illustration du projet concours" loading="lazy">
+          <div class="project-body">
+            <span class="badge">Projet de démonstration</span>
+            <h3>Plateforme de préparation aux concours ivoiriens</h3>
+            <p>Idée : une plateforme pour s'entraîner avec des annales, des quiz et un suivi de progression.</p>
+            <ul class="tags tags-small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a href="#contact" class="btn btn-small btn-outline">En discuter</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <img src="images/projet-etudiants.svg" alt="Illustration du projet gestion des étudiants" loading="lazy">
+          <div class="project-body">
+            <span class="badge">Projet de démonstration</span>
+            <h3>Gestion des étudiants</h3>
+            <p>Idée : une application pour enregistrer des étudiants, leurs inscriptions et leurs notes.</p>
+            <ul class="tags tags-small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Base de données</li></ul>
+            <a href="#contact" class="btn btn-small btn-outline">En discuter</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <img src="images/projet-stock.svg" alt="Illustration du projet gestion de stock" loading="lazy">
+          <div class="project-body">
+            <span class="badge">Projet de démonstration</span>
+            <h3>Gestion de stock pour PME</h3>
+            <p>Idée : un outil simple pour suivre les entrées, les sorties et les alertes de stock d'une petite entreprise.</p>
+            <ul class="tags tags-small"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Base de données</li></ul>
+            <a href="#contact" class="btn btn-small btn-outline">En discuter</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <img src="images/projet-immobilier.svg" alt="Illustration du projet plateforme immobilière" loading="lazy">
+          <div class="project-body">
+            <span class="badge">Projet de démonstration</span>
+            <h3>Plateforme immobilière</h3>
+            <p>Idée : un site de petites annonces pour trouver et publier des logements à Abidjan.</p>
+            <ul class="tags tags-small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <a href="#contact" class="btn btn-small btn-outline">En discuter</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== 5. OBJECTIFS ===== -->
+    <section id="objectifs" class="section container reveal">
+      <h2>Objectifs</h2>
+      <div class="grid grid-3">
+        <article class="card goal"><h3>Réussir mes projets universitaires</h3><p>Valider mon cursus et consolider mes bases en informatique, en réseau et en programmation web.</p></article>
+        <article class="card goal"><h3>Trouver un stage ou un premier emploi</h3><p>Mettre mes compétences au service d'une équipe et apprendre auprès de professionnels.</p></article>
+        <article class="card goal"><h3>Développer une activité freelance</h3><p>Créer des sites et outils simples pour des petites structures qui veulent se développer en ligne.</p></article>
+      </div>
+    </section>
+
+    <!-- ===== BONUS : POURQUOI TRAVAILLER AVEC MOI ===== -->
+    <section class="section container reveal">
+      <h2>Pourquoi travailler avec moi ?</h2>
+      <div class="grid grid-3">
+        <article class="card why"><h3>Je veux apprendre vite</h3><p>Je me forme chaque jour et je progresse en construisant des projets concrets.</p></article>
+        <article class="card why"><h3>Je pense aux besoins locaux</h3><p>Je cherche des solutions simples, utiles et adaptées au contexte ivoirien.</p></article>
+        <article class="card why"><h3>Je suis sérieux et organisé</h3><p>Autonomie, travail en équipe et capacité d'adaptation sont au cœur de ma façon de travailler.</p></article>
+      </div>
+    </section>
+
+    <!-- ===== 6. CONTACT ===== -->
+    <section id="contact" class="section container reveal">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="contact-info">
+          <p>Un stage, un projet ou une question ? Écrivez-moi, je réponds avec plaisir.</p>
+          <ul class="links">
+            <!-- Remplacez les adresses ci-dessous -->
+            <li><span>E-mail</span><a href="mailto:ismaelbakayogo1@gmail.com">ismaelbakayogo1@gmail.com</a></li>
+            <li><span>GitHub</span><a href="#" id="link-github">À compléter</a></li>
+            <li><span>LinkedIn</span><a href="#" id="link-linkedin">À compléter</a></li>
+          </ul>
+        </div>
+        <form class="card form" id="contact-form">
+          <!-- Champ anti-spam : invisible pour les visiteurs, ne pas supprimer -->
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
+          <label>Nom <input type="text" name="nom" placeholder="Votre nom" required></label>
+          <label>E-mail <input type="email" name="email" placeholder="vous@exemple.com" required></label>
+          <label>Message <textarea name="message" rows="5" placeholder="Votre message" required></textarea></label>
+          <button type="submit" class="btn">Envoyer le message</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="annee"></span> Ismaël Bakayogo. Tous droits réservés.</p>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Retour en haut">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
